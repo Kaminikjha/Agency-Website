@@ -9,11 +9,11 @@ const About = () => {
         className=" w-full bg-slate-200 flex flex-col lg:flex-row gap-10  lg:gap-20 h-fit px-7 py-5 lg:px-16 lg-py-12"
       >
         <div className="flex justify-center items-center flex-col gap-8 lg:w-1/2">
-          <h1 className="text-green-600 font-bold text-6xl">
-            Hosting
-            <ReactTyped className="pl-4"
+          <h1 className="text-green-600 font-bold text-6xl text-center leading-[68px]">
+            Hosting{" "} 
+            <ReactTyped
               strings={[
-                " solution wit benefits"
+                "solution with benefits"
               ]}
               typeSpeed={100}
               loop={true}
@@ -38,7 +38,7 @@ const About = () => {
         </div>
 
         <div className="flex justify-center items-center w-full lg:w-1/2 lg:flex-col-2 flex-wrap">
-          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
+          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-5 lg:p-7">
             <i className="fa-solid fa-laptop animate-bounce bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
               {" "}
@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
+          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-5 lg:p-7">
             <i className="fa-solid fa-database animate-bounce bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
               {" "}
@@ -74,7 +74,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
+          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-5 lg:p-7">
             <i className="fa-solid fa-globe animate-bounce  bg-green-500  p-4  rounded-full hover:bg-green-600  cursor-pointer"></i>
 
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
@@ -91,7 +91,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
+          <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-5 lg:p-7">
             <i className="fa-solid fa-lock animate-bounce bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
 
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
