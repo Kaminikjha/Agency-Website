@@ -16,12 +16,12 @@ const Header = () => {
         {toggle ? (
           <i
             onClick={() => setToggle(!toggle)}
-            className="fa-solid fa-bars text-2xl md:hidden block"
+            className="fa-solid fa-xmark text-3xl md:hidden block"
           ></i>
         ) : (
           <i
             onClick={() => setToggle(!toggle)}
-            className="fa-solid fa-xmark text-3xl md:hidden block"
+            className="fa-solid fa-bars text-2xl md:hidden block"
           ></i>
         )}
 
@@ -71,8 +71,6 @@ const Header = () => {
                 Contact
               </a>
             </li>
-
-
           </ul>
         </div>
 
