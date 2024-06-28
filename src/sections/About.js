@@ -10,15 +10,17 @@ const About = () => {
       >
         <div className="flex justify-center items-center flex-col gap-8 lg:w-1/2">
           <h1 className="text-green-600 font-bold text-6xl">
-          Hosting {" "}
-          <ReactTyped
+            Hosting
+            <ReactTyped className="pl-4"
               strings={[
-                " solution wit benefits",
+                " solution wit benefits"
               ]}
               typeSpeed={100}
               loop={true}
               backSpeed={50}
             />
+
+
             
           </h1>
 
@@ -37,7 +39,7 @@ const About = () => {
 
         <div className="flex justify-center items-center w-full lg:w-1/2 lg:flex-col-2 flex-wrap">
           <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
-            <i className="fa-solid fa-laptop bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
+            <i className="fa-solid fa-laptop animate-bounce bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
               {" "}
               SSL Certificate{" "}
@@ -55,7 +57,7 @@ const About = () => {
           </div>
 
           <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
-            <i className="fa-solid fa-database bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
+            <i className="fa-solid fa-database animate-bounce bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
               {" "}
               Personal Domain{" "}
@@ -73,7 +75,7 @@ const About = () => {
           </div>
 
           <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
-            <i className="fa-solid fa-globe bg-green-500  p-4  rounded-full hover:bg-green-600  cursor-pointer"></i>
+            <i className="fa-solid fa-globe animate-bounce  bg-green-500  p-4  rounded-full hover:bg-green-600  cursor-pointer"></i>
 
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
               Media Storage{" "}
@@ -90,7 +92,7 @@ const About = () => {
           </div>
 
           <div className="flex justify-center items-center gap-3 flex-col bg-white h-auto w-64 rounded-lg m-5 p-3 lg:p-7">
-            <i className="fa-solid fa-lock bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
+            <i className="fa-solid fa-lock animate-bounce bg-green-500  p-4 rounded-full hover:bg-green-600  cursor-pointer"></i>
 
             <h className="text-xl lg:text-2xl text-center text-green-500 font-semibold">
               Code Editor

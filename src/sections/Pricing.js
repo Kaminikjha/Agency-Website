@@ -4,17 +4,18 @@ import { ReactTyped } from "react-typed";
 const Pricing = () => {
   return (
     <>
-      <section className="w-full bg-slate-200 flex-col justify-center items-start h-fit px-7 py-14 lg:p-20 gap-5">
+      <section
+        id="pricing"
+        className="w-full bg-slate-200 flex-col justify-center items-start h-fit px-7 py-14 lg:p-20 gap-5"
+      >
         <h1 className="text-green-600 font-bold text-6xl">
-        <ReactTyped
-              strings={[
-                "Pricing Table",
-              ]}
-              typeSpeed={100}
-              loop={true}
-              backSpeed={50}
-            />
-           </h1>
+          <ReactTyped
+            strings={["Pricing Table"]}
+            typeSpeed={100}
+            loop={true}
+            backSpeed={50}
+          />
+        </h1>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-20 justify-between items-start w-full mt-8">
           <p className="text-slate-950 text-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
