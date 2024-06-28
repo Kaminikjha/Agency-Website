@@ -12,7 +12,7 @@ const Hero = () => {
               strings={[
                 "solution for your static website",
                 "Web Development",
-                "Digitel Marketing",
+                "Digital Marketing",
               ]}
               typeSpeed={100}
               loop={true}
