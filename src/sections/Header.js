@@ -57,20 +57,22 @@ const Header = () => {
             <li>
               <a
                 className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
-                href="#contact"
+                href="#pricing"
               >
-                Contact
+                Pricing
               </a>
             </li>
 
             <li>
               <a
                 className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
-                href="#pricing"
+                href="#contact"
               >
-                Pricing
+                Contact
               </a>
             </li>
+
+
           </ul>
         </div>
 
