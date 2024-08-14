@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
+  // disable background scrolling when mobile menu is active
+
+  useEffect(() => {
+    
+    if (toggle) {
+      document.body.classList.add("overflow-y-hidden")
+    } else {
+      document.body.classList.remove("overflow-y-hidden")
+    }
+  })
+
   return (
     <div>
-      <section className="w-full bg-black text-white flex justify-between items-center px-8 py-6 lg:px-16  sticky top-0 z-40">
+      <section className="w-full bg-black text-white flex justify-between items-center px-8 py-6 lg:px-16">
         <h1 className="text-green-600 text-3xl font-bold w-96">
           <i class="fa-brands fa-dashcube"></i>
           <span className="text-white">EBUG </span>
@@ -79,7 +90,7 @@ const Header = () => {
         {/* Responsive Menu */}
 
         <ul
-          className={` duration-300 md:hidden w-full h-screen fixed bg-black  top-[82px] 
+          className={` duration-300 md:hidden w-full h-screen fixed block bg-black  top-[79px] 
          ${toggle ? "left-[0]" : "left-[-100%]"} `}
         >
           <li className=" p-5 ">
@@ -109,7 +120,7 @@ const Header = () => {
             </a>
           </li>
 
-          <li className=" p-3 ">
+          <li className=" p-5 ">
             <a
               className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
               href="#pricing"
