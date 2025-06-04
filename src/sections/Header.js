@@ -4,24 +4,26 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   // disable background scrolling when mobile menu is active
-
   useEffect(() => {
-    
     if (toggle) {
-      document.body.classList.add("overflow-y-hidden")
+      document.body.classList.add("overflow-y-hidden");
     } else {
-      document.body.classList.remove("overflow-y-hidden")
+      document.body.classList.remove("overflow-y-hidden");
     }
-  })
+  }, [toggle]);
+
+  const handleMenuItemClick = () => {
+    setToggle(false);
+  };
 
   return (
     <div>
       <section className="w-full bg-black text-white flex justify-between items-center px-8 py-6 lg:px-16">
         <h1 className="text-green-600 text-3xl font-bold w-96">
-          <i class="fa-brands fa-dashcube"></i>
+          <i className="fa-brands fa-dashcube"></i>
           <span className="text-white">EBUG </span>
-          <i class="fa-solid fa-explosion"></i>{" "}
-          <span className=" text-white">NTITY</span>
+          <i className="fa-solid fa-explosion"></i>{" "}
+          <span className="text-white">NTITY</span>
         </h1>
 
         {toggle ? (
@@ -36,7 +38,7 @@ const Header = () => {
           ></i>
         )}
 
-        <div className=" hidden md:flex justify-end items-center w-full  gap-2">
+        <div className="hidden md:flex justify-end items-center w-full gap-2">
           <ul className="flex justify-center items-center gap-3">
             <li>
               <a
@@ -88,51 +90,55 @@ const Header = () => {
         <div className="flex lg:hidden flex-col"></div>
 
         {/* Responsive Menu */}
-
         <ul
-          className={` duration-300 md:hidden w-full h-screen fixed block bg-black  top-[79px] 
+          className={`duration-300 md:hidden w-full h-screen fixed block bg-black top-[79px] 
          ${toggle ? "left-[0]" : "left-[-100%]"} `}
         >
-          <li className=" p-5 ">
+          <li className="p-5">
             <a
               className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
               href="/"
+              onClick={handleMenuItemClick}
             >
               Home
             </a>
           </li>
 
-          <li className=" p-5 ">
+          <li className="p-5">
             <a
               className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
               href="#services"
+              onClick={handleMenuItemClick}
             >
               Services
             </a>
           </li>
 
-          <li className=" p-5 ">
+          <li className="p-5">
             <a
               className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
               href="#testimonials"
+              onClick={handleMenuItemClick}
             >
               Testimonials
             </a>
           </li>
 
-          <li className=" p-5 ">
+          <li className="p-5">
             <a
               className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
               href="#pricing"
+              onClick={handleMenuItemClick}
             >
               Pricing
             </a>
           </li>
 
-          <li className=" p-5 ">
+          <li className="p-5">
             <a
               className="text-lg text-slate-100 cursor-pointer rounded-sm px-5 py-2 hover:bg-green-600 hover:text-white active:text-white"
               href="#contact"
+              onClick={handleMenuItemClick}
             >
               Contact
             </a>
