@@ -13,7 +13,7 @@ const Testimonials = () => {
         className="w-full flex flex-col gap-5 h-fit  px-7 py-10 lg:px-16 lg-py-20"
       >
         <p className="text-center text-xl"> Testimonials </p>
-        <h1 className="text-green-600 font-bold text-6xl text-center leading-[68px]">
+        <h1 className="text-green-600 mt-14 md:mt-0 font-bold text-4xl md:text-5xl lg:text-6xl text-center leading-[68px]">
         <ReactTyped
               strings={[
                 "What Clients Says",

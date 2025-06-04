@@ -11,7 +11,7 @@ const Contact = () => {
       >
         <div className="flex justify-center items-center w-full lg:w-3/4 flex-col lg:flex-row bg-white rounded-lg px-8 py-12 gap-10 z-20">
           <div className="flex justify-center items-start flex-col gap-4 w-full">
-            <h1 className="text-green-600 font-bold text-[35px]">
+            <h1 className="text-green-600 mt-14 md:mt-0 font-bold text-[35px]">
             <ReactTyped
               strings={[
                 " Contact Info",

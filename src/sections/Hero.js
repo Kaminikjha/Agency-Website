@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section className="flex flex-col lg:flex-row justify-between items-center gap-4 w-full bg-slate-100 h-auto lg:h-screen">
         <div className="flex justify-center items-start flex-col gap-8 lg:w-1/2 px-10 py-10 lg:px-20 lg:py-20">
-          <h1 className="text-green-600 font-bold text-6xl">
+          <h1 className="text-green-600 mt-14 md:mt-0 font-bold text-4xl md:text-5xl lg:text-6xl w-full text-center md:text-left">
             One-click{" "}
             <ReactTyped
               strings={[

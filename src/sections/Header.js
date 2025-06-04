@@ -17,9 +17,9 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="fixed w-full top-0 left-0 z-50">
       <section className="w-full bg-black text-white flex justify-between items-center px-8 py-6 lg:px-16">
-        <h1 className="text-green-600 text-3xl font-bold w-96">
+        <h1 className="text-green-600 text-2xl font-bold w-96">
           <i className="fa-brands fa-dashcube"></i>
           <span className="text-white">EBUG </span>
           <i className="fa-solid fa-explosion"></i>{" "}

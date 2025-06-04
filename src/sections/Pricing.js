@@ -8,7 +8,7 @@ const Pricing = () => {
         id="pricing"
         className="w-full bg-slate-200 flex flex-col justify-center items-start h-fit px-4 py-14 md:px-7 lg:p-20 gap-5"
       >
-        <h1 className="text-green-600 font-bold text-4xl md:text-5xl lg:text-6xl w-full text-center md:text-left">
+        <h1 className="text-green-600 mt-14 md:mt-0 font-bold text-4xl md:text-5xl lg:text-6xl w-full text-center md:text-left">
           <ReactTyped
             strings={["Pricing Table"]}
             typeSpeed={100}

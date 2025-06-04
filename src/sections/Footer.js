@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <section className=" w-full bg-black text-white flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-4 px-10 py-14 lg:px-20 lg:py-28">
         <div className=" flex flex-col justify-center items-start gap-2 w-full lg:w-[40%]">
-          <h1 className=" text-green-600 font-bold text-4xl mb-5">
+          <h1 className=" text-green-600 font-bold text-2xl mb-5">
             <i class="fa-brands fa-dashcube"></i>
             <span className="text-white">EBUG </span>
             <i class="fa-solid fa-explosion"></i>{" "}
